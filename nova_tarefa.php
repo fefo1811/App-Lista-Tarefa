@@ -19,6 +19,8 @@
 			</div>
 		</nav>
 
+		<div class="bg-succes pt-2 text-white d-flex justifify-content-center">já </div>
+
 		<div class="container app">
 			<div class="row">
 				<div class="col-md-3 menu">
@@ -36,10 +38,10 @@
 								<h4>Nova tarefa</h4>
 								<hr />
 
-								<form>
+								<form method="post" action="tarefa_controller.php">
 									<div class="form-group">
 										<label>Descrição da tarefa:</label>
-										<input type="text" class="form-control" placeholder="Exemplo: Lavar o carro">
+										<input type="text" class="form-control" placeholder="Exemplo: Lavar o carro" name="tarefa">
 									</div>
 
 									<button class="btn btn-success">Cadastrar</button>
